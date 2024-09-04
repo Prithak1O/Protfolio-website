@@ -480,9 +480,7 @@ button {
     font-size: 38px;
   }
 
-  .about {
-    height: 120vh;
-  }
+
 
 }
 
@@ -750,16 +748,9 @@ button {
     height: 90vh;
   }
 }
-
-@media (max-width: 448px) {
-  .about {
-    height: 100vh;
-  }
-}
-
 @media (max-width : 380px) {
   .about {
-    height: 120vh;
+    min-height: 120vh;
   }
   .img-about{
     height: 150px;
