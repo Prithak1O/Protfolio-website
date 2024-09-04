@@ -759,7 +759,7 @@ button {
 
 @media (max-width : 380px) {
   .about {
-    height: 100vh;
+    height: 120vh;
   }
   .img-about{
     height: 150px;
