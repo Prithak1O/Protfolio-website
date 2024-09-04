@@ -547,10 +547,6 @@ button {
   .text-about {
     font-size: 33px;
   }
-
-  .about {
-    height: 105vh;
-  }
 }
 
 @media (max-width: 1085px) {
@@ -749,9 +745,6 @@ button {
   }
 }
 @media (max-width : 380px) {
-  .about {
-    min-height: 120vh;
-  }
   .img-about{
     height: 150px;
     width: 100px;
