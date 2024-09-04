@@ -761,6 +761,10 @@ button {
   .about {
     height: 100vh;
   }
+  .img-about{
+    height: 150px;
+    width: 100px;
+  }
 }
 
 @keyframes appear {
