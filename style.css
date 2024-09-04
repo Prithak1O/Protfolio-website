@@ -1,0 +1,779 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  filter: grayscale(50%);
+  background: white;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+.head {
+  height: 100px;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-branding {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 40px;
+  color: #000000;
+  font-family: "DM Serif Display", serif;
+  height: 90px;
+  width: 90px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+  border: transparent;
+  border-radius: 50%;
+}
+li {
+  list-style: none;
+}
+.nav-brands:hover {
+  color: gray; /* Optional: Change color on hover */
+}
+.nav-brands {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: black;
+  position: relative;
+  padding-bottom: 5px; /* Adjust padding to ensure the border appears neatly */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-brands::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-brands:hover::after {
+  width: 100%; /* Full width under the link */
+}
+.ham-burger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-branding.mobile {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  transition: max-height 0.3s ease-in;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-branding.mobile.open {
+  max-height: 250px;
+}
+
+
+.hero {
+  height: 85vh;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-text h1 {
+  color: black;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.first-text span {
+  font-size: 30px;
+}
+
+.img-box {
+  height: 350px;
+  width: 350px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.img-box img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(50%);
+  border: 1px solid black;
+  transform: rotate(-7deg);
+  border-radius: 20px;
+}
+
+.last-text {
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.last-text p {
+  font-size: 15px;
+  color: gray;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.about {
+  background-color: white;
+  height: 90vh;
+  width: 100%;
+}
+
+.text-about {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-family: "DM Serif Display", serif;
+}
+
+.box-about {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.para {
+  font-size: 18px;
+  text-align: center;
+  width: 40%;
+  line-height: 30px;
+  line-break: auto;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.img-about {
+  height: 350px;
+  width: 250px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.img-about img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(50%);
+  border: 1px solid black;
+  transform: rotate(-7deg);
+  border-radius: 20px;
+}
+
+.car-marquee {
+  width: 100%;
+  height: 200px;
+}
+
+.m2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mr-img {
+  height: 120px;
+  width: 150px;
+}
+
+.skills-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  /* Smaller max width on desktop */
+  margin: 0 auto;
+  /* Center the section */
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skill {
+  margin-bottom: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  /* Ensure smooth transition */
+}
+
+.skill:hover{
+  scale: 1.1;
+}
+
+.skill h3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 8px;
+  cursor: pointer;
+  /* Indicate it's clickable */
+}
+
+.skill p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  max-height: 0;
+  /* Start collapsed */
+  overflow: hidden;
+  transition: max-height 0.2s ease-in, 0.3s ease-in;
+  /* Smooth transition */
+  padding: 0;
+  /* Start with no padding */
+}
+
+.skill.expanded p {
+  max-height: 300px;
+  /* Adjusted for desktop */
+  padding: 8px 0;
+  /* Restore padding on expansion */
+}
+
+.connect {
+  background-color: white;
+  color: black;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.connect-text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.connect-text h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.connect-text h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.connect-text .work {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.icons-list {
+  margin: 20px 0;
+}
+
+.icons-list a {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.icons-list a:hover {
+  color: lightblue;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-input {
+  background-color: #e6f4f8;
+  border: 2px solid black;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  transition: ease-in 0.1s;
+}
+
+.form-input::placeholder {
+  color: black;
+}
+
+/* From Uiverse.io by e-coders */ 
+button {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+ }
+ 
+ button span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+ }
+ 
+ button span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+ }
+ 
+ button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+ }
+ 
+ button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+ }
+ 
+ button:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+ }
+
+
+
+@media (max-width: 768px) {
+  .connect-text {
+      padding: 0 10px;
+  }
+
+  .connect-text h1 {
+      font-size: 2rem;
+  }
+
+  .form-input {
+      width: 90%;
+  }
+
+  .icons-list a {
+      font-size: 1.2rem;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .connect-text h3 {
+      font-size: 1.5rem;
+  }
+
+  .connect-text h1 {
+      font-size: 1.8rem;
+  }
+
+  .form-input {
+      width: 70%;
+      font-size: 1rem;
+  }
+
+  .icons-list a {
+      font-size: 1.2rem;
+      margin: 0 5px;
+  }
+
+
+}
+
+
+@media (max-width : 1250px) {
+  .car-marquee {
+    display: none;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .box-about {
+    flex-direction: column;
+  }
+
+  .text-about {
+    font-size: 38px;
+  }
+
+  .about {
+    height: 120vh;
+  }
+
+}
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  ul li a {
+    font-size: 16px;
+  }
+
+  .text-about {
+    font-size: 35px;
+  }
+
+  .box-skills {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  nav ul li {
+    margin: 50px 0;
+  }
+
+  ul li a {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  ul li a:hover {
+    border-radius: 20px;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  .para {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .text-about {
+    font-size: 33px;
+  }
+
+  .about {
+    height: 105vh;
+  }
+}
+
+@media (max-width: 1085px) {
+  .box-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-skill {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .skills-head h1 {
+    font-size: 28px;
+  }
+
+  .skills-about h2 {
+    font-size: 18px;
+  }
+
+  .skills-list {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 858px) {
+  .skills {
+    height: auto;
+    padding: 20px;
+  }
+
+  .img-skill {
+    height: 180px;
+    width: 180px;
+  }
+
+  .skills-head h1 {
+    font-size: 25px;
+  }
+
+  .skills-about h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-branding {
+    display: none;
+  }
+
+  .ham-burger {
+    display: block;
+  }
+
+  .skills-section {
+    padding: 30px;
+    max-width: 100%;
+    /* Full width on mobile */
+  }
+
+  .skills-section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-height: 0;
+    /* Start collapsed */
+  }
+
+  .skill.expanded p {
+    max-height: 500px;
+    /* Larger expansion for mobile */
+    padding: 10px 0;
+    /* Restore padding on expansion */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-left, .footer-right {
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+}
+
+@media (max-width: 700px) {
+  .img-skill {
+    height: 150px;
+    width: 150px;
+  }
+
+  .skills-head h1 {
+    font-size: 22px;
+  }
+
+  .skills-about h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .first-text h1 {
+    font-size: 25px;
+  }
+
+  .first-text span {
+    font-size: 20px;
+  }
+
+  .img-box {
+    height: 200px;
+    width: 200px;
+  }
+
+  .last-text {
+    font-size: 25px;
+  }
+
+  .last-text p {
+    font-size: 12px;
+  }
+
+  .skills-list {
+    font-size: 12px;
+  }
+
+  .skills-head {
+    font-size: 20px;
+  }
+
+  .connect-text h1 {
+    font-size: 25px;
+  }
+
+  .text-about {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 565px) {
+
+  .img-about {
+    height: 300px;
+    width: 200px;
+  }
+
+  .img-skill {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text-about {
+    font-size: 25px;
+  }
+
+  .img-about {
+    height: 280px;
+    width: 180px;
+  }
+
+  .car-marquee {
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+
+  .about {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 448px) {
+  .about {
+    height: 100vh;
+  }
+}
+
+@media (max-width : 380px) {
+  .about {
+    height: 100vh;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.block {
+  animation: appear 0.2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}

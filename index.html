@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Black Simple Letters J and K Monogram  Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="head">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="Black Simple Letters J and K Monogram  Logo.png" alt="">
+            </a>
+            <div class="nav-branding">
+                <li><a href="#home" class="nav-brands">Home</a></li>
+                <li><a href="#about" class="nav-brands">About</a></li>
+                <li><a href="#skills" class="nav-brands">Skills</a></li>
+                <li><a href="#contact" class="nav-brands">Contact</a></li>
+            </div>
+            <div class="ham-burger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-branding mobile">
+        <li><a href="#home" class="nav-brands mobo">Home</a></li>
+        <li><a href="#about" class="nav-brands mobo">About</a></li>
+        <li><a href="#skills" class="nav-brands mobo">Skills</a></li>
+        <li><a href="#contact" class="nav-brands mobo">Contact</a></li>
+    </div>
+
+    <div class="hero" id="home">
+        <div class="first-text">
+            <h1>Prithak <span>Acharya</span></h1>
+        </div>
+        <div class="img-box">
+            <img src="download.png" alt="">
+        </div>
+        <div class="last-text">
+            Protfolio<p>Web Developer, Designer</p>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="text-about">
+            <h1>Little About Me</h1>
+        </div>
+        <div class="box-about block">
+            <div class="para">
+                <p>I'm Prithak Acharya, here. a newbie in the tech sector. I'm sixteen years old. Nepal is the name of
+                    my nation. I work as a web developer and graphic designer. Filmmaking, video editing, and visual
+                    effects are also my passions.</p>
+            </div>
+            <div class="img-about">
+                <img src="alexandre-pascal-cLPA22bKOyU-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="car-marquee">
+        <marquee behavior="alternate" direction="down" height="150px">
+            <marquee direction="right" scrollamount="5">
+                <img src="car.png" alt="" class="mr-img">
+            </marquee>
+        </marquee>
+    </div>
+    <div class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>Proficient in building responsive and dynamic websites using HTML, CSS, JavaScript, and popular
+                frameworks like React. Experienced in developing e-commerce platforms, personal portfolios, and business
+                websites.</p>
+        </div>
+        <div class="skill">
+            <h3>UI/UX Design</h3>
+            <p>Expertise in designing user interfaces and crafting user experiences that are intuitive and visually
+                appealing. Skilled in wireframing, prototyping, and creating design systems that enhance usability.</p>
+        </div>
+        <div class="skill">
+            <h3>Graphic Design</h3>
+            <p>Experienced in creating logos, posters, and branding materials. Proficient in using design tools like
+                Adobe Illustrator, Photoshop, and Canva to deliver professional and impactful visual content.</p>
+        </div>
+    </div>
+    <div class="connect" id="contact">
+        <div class="connect-text">
+            <h3>Prithak Acharya</h3>
+            <h1>Work With Me :)</h1>
+            <p class="work">Workplace :- Biratnagar-3, Nepal.</p>
+            <p class="icons-list">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVxgQnZWWfBlLBhFjGfZFtxFlsZbJbHkdMzhGqVcgHMKKhfkPFCTNGrnqTWsBrrRZPpnWN"
+                    target="_blank" class="gmail">prithakacharya23@gmail.com</a>
+                <a href="https://www.instagram.com/prithak_10/" target="_blank" class="icons"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="" class="icons"><i class="fa-brands fa-github"></i></a>
+            </p>
+            <form onsubmit="return takevalue()" class="form" action="">
+                <input type="text" name="name" placeholder="Enter Your Name" class="form-input form-input-wrapper" id="name">
+                <input type="email" name="gmail" placeholder="Enter Your Gmail" class="form-input form-input-wrapper" id="gmail">
+                <button type="submit"><span class="text">Send</span><span>Thanks!</span></button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script>
+        function takevalue() {
+            var name = document.getElementById("name").value.trim();
+            var gmail = document.getElementById("gmail").value.trim();
+            var messageDiv = document.getElementById("message");
+
+            if (name === "" || gmail === "") {
+                messageDiv.innerHTML = "Please enter your details.";
+                messageDiv.style.color = "red";  // Optional: to make the error message stand out
+                return false;
+            } else {
+                messageDiv.innerHTML = "Thanks For Providing your Information :)";
+                messageDiv.style.color = "green";  // Optional: to make the success message green
+
+                var form = document.querySelector(".form");
+                form.style.display = "none";
+
+                return false;
+            }
+        }
+
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-branding.mobile');
+            const burgerIcon = document.querySelector('.ham-burger i');
+
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                burgerIcon.classList.remove('fa-xmark');
+                burgerIcon.classList.add('fa-bars');
+            } else {
+                nav.classList.add('open');
+                burgerIcon.classList.remove('fa-bars');
+                burgerIcon.classList.add('fa-xmark');
+            }
+        }
+        document.querySelectorAll('.skill h3').forEach(skillTitle => {
+            skillTitle.addEventListener('click', () => {
+                const skillContainer = skillTitle.parentElement;
+                skillContainer.classList.toggle('expanded');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
