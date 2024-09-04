@@ -456,7 +456,10 @@ button {
       font-size: 1.2rem;
       margin: 0 5px;
   }
-
+.img-about{
+    height: 250px;
+    width: 200px;
+  }
 
 }
 
