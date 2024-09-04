@@ -575,7 +575,6 @@ button {
 
 @media (max-width: 858px) {
   .skills {
-    height: auto;
     padding: 20px;
   }
 
@@ -668,9 +667,6 @@ button {
 }
 
 @media (max-width: 700px) {
-  .hero {
-    height: 70vh;
-  }
 
   .first-text h1 {
     font-size: 25px;
@@ -732,16 +728,7 @@ button {
     height: 280px;
     width: 180px;
   }
-
-  .car-marquee {
-    display: none;
-    height: 0px;
-    width: 0px;
-  }
-
-  .about {
-    height: 90vh;
-  }
+  
 }
 @media (max-width : 380px) {
   .img-about{
